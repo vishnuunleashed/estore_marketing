@@ -35,7 +35,7 @@ class _FruitsState extends State<Fruits> {
               Image.asset(value.fruitsandveg[index].pic!),
               Text(value.fruitsandveg[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
 
-              Text(value.fruitsandveg[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Text("₹"+value.fruitsandveg[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ),

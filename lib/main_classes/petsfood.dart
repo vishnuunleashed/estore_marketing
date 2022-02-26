@@ -35,7 +35,7 @@ class _PetsFoodState extends State<PetsFood> {
               Image.asset(value.petsfood[index].pic!),
               Text(value.petsfood[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
 
-              Text(value.petsfood[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Text("₹"+value.petsfood[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ),

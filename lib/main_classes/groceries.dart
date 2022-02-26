@@ -34,7 +34,7 @@ class _GroceriesState extends State<Groceries> {
               Image.asset(value.groceries[index].pic!),
               Text(value.groceries[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
 
-              Text(value.groceries[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Text("₹"+value.groceries[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ),

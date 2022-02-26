@@ -35,7 +35,7 @@ class _BeveragesState extends State<Beverages> {
               Image.asset(value.bakery[index].pic!),
               Text(value.bakery[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
 
-              Text(value.bakery[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Text("₹"+value.bakery[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ),

@@ -7,6 +7,7 @@ import 'package:estore_marketing/main_classes/groceries.dart';
 import 'package:estore_marketing/main_classes/maincategory.dart';
 import 'package:estore_marketing/main_classes/medicines.dart';
 import 'package:estore_marketing/main_classes/petsfood.dart';
+import 'package:estore_marketing/pages/subhome.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -21,7 +22,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 0;
 
+
+  callData(index){
+    setState(() {
+      _selectedIndex = index;
+    });
+
+  }
+
+  final screen = [
+      SubHome(),
+      Container(color: Colors.greenAccent)
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,28 +44,19 @@ class _HomePageState extends State<HomePage> {
         toolbarHeight: 130, // Set this height
         flexibleSpace: MyAppBar(),
       ),
-      body: ListView(
-        scrollDirection: Axis.vertical,
-        shrinkWrap: true,
-        children: [
-          Padding(padding: EdgeInsets.all(15),child: Card(elevation:10 ,child: Image.asset("assets/images/banner.jpeg"),)),
-          Text("Category",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          MainCategory(),
-          Text("Fruits And Vegetables",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          Fruits(),
-          Text("Groceries And Staples",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          Groceries(),
-          Text("Bakery,Cakes And Dairy",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          Bakery(),
-          Text("Beverages",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          Beverages(),
-          Text("Pets Food",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          PetsFood(),
-          Text("Medicines",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
-          Medicines(),
+      bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.apps_rounded),label: "Categories"),
 
-        ],
+      ],
+        backgroundColor: Colors.green[800],
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.white,
+        currentIndex: 0,
+        onTap: callData,
+
       ),
+      body: screen[_selectedIndex],
     );
   }
 }

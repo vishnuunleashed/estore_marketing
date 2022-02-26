@@ -35,7 +35,7 @@ class _MedicinesState extends State<Medicines> {
               Image.asset(value.medicines[index].pic!),
               Text(value.medicines[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
 
-              Text(value.medicines[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Text("₹"+value.medicines[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ),

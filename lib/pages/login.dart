@@ -1,4 +1,5 @@
 import 'package:estore_marketing/pages/homepage.dart';
+import 'package:estore_marketing/pages/subhome.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -13,7 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   String? _password;
 
-  bool _obscureText = true;
+
 
   final _formkey = GlobalKey<FormState>();
 
