@@ -1,3 +1,4 @@
+import 'package:estore_marketing/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -126,6 +127,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
       print("Phone Number is : " + _phone!);
       print("Password is : " + _password!);
+
+      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
     }
   }
 }
