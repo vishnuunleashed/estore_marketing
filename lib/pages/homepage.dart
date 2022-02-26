@@ -21,13 +21,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Inventory? inventory;
-  // @override
-  // void initState() {
-  //
-  //   inventory = context.read<Inventory>();
-  //   super.initState();
-  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +47,7 @@ class _HomePageState extends State<HomePage> {
           Beverages(),
           Text("Pets Food",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
           PetsFood(),
-          Text("Pets Food",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
+          Text("Medicines",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.green[800]),),
           Medicines(),
 
         ],
