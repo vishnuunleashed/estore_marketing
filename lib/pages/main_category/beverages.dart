@@ -1,4 +1,5 @@
-import 'package:estore_marketing/main_classes/beverages.dart';
+
+import 'package:estore_marketing/main_classes/category_classes/beverages.dart';
 import 'package:flutter/material.dart';
 
 class ShopBeverage extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:estore_marketing/main_classes/bakery.dart';
+import 'package:estore_marketing/main_classes/category_classes/bakery.dart';
 import 'package:flutter/material.dart';
 
 class BakerandCake extends StatefulWidget {

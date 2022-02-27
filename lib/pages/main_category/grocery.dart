@@ -1,4 +1,4 @@
-import 'package:estore_marketing/main_classes/groceries.dart';
+import 'package:estore_marketing/main_classes/category_classes/groceries.dart';
 import 'package:flutter/material.dart';
 
 class Grocery extends StatefulWidget {

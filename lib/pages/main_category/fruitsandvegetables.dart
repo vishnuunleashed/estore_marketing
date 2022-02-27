@@ -1,4 +1,4 @@
-import 'package:estore_marketing/main_classes/fruitandveg.dart';
+import 'package:estore_marketing/main_classes/category_classes/fruitandveg.dart';
 import 'package:flutter/material.dart';
 
 class FruitAndVegetables extends StatefulWidget {

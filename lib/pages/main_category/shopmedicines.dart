@@ -1,4 +1,4 @@
-import 'package:estore_marketing/main_classes/medicines.dart';
+import 'package:estore_marketing/main_classes/category_classes/medicines.dart';
 import 'package:flutter/material.dart';
 
 class ShopMeds extends StatefulWidget {

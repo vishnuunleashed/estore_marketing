@@ -1,5 +1,5 @@
-import 'package:estore_marketing/main_classes/beverages.dart';
-import 'package:estore_marketing/main_classes/petsfood.dart';
+
+import 'package:estore_marketing/main_classes/category_classes/petsfood.dart';
 import 'package:flutter/material.dart';
 
 class PetFood extends StatefulWidget {

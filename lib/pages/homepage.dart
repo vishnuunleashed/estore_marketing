@@ -1,12 +1,12 @@
 import 'package:estore_marketing/Inventory/inventory.dart';
 import 'package:estore_marketing/main_classes/appbarclass.dart';
-import 'package:estore_marketing/main_classes/bakery.dart';
-import 'package:estore_marketing/main_classes/beverages.dart';
-import 'package:estore_marketing/main_classes/fruitandveg.dart';
-import 'package:estore_marketing/main_classes/groceries.dart';
-import 'package:estore_marketing/main_classes/maincategory.dart';
-import 'package:estore_marketing/main_classes/medicines.dart';
-import 'package:estore_marketing/main_classes/petsfood.dart';
+import 'package:estore_marketing/main_classes/category_classes/bakery.dart';
+
+import 'package:estore_marketing/main_classes/category_classes/fruitandveg.dart';
+import 'package:estore_marketing/main_classes/category_classes/groceries.dart';
+
+import 'package:estore_marketing/main_classes/category_classes/medicines.dart';
+import 'package:estore_marketing/main_classes/category_classes/petsfood.dart';
 import 'package:estore_marketing/pages/subhome.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
