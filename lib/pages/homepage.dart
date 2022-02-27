@@ -2,7 +2,7 @@ import 'package:estore_marketing/Inventory/inventory.dart';
 import 'package:estore_marketing/main_classes/appbarclass.dart';
 import 'package:estore_marketing/main_classes/bakery.dart';
 import 'package:estore_marketing/main_classes/beverages.dart';
-import 'package:estore_marketing/main_classes/fruitandvegetables.dart';
+import 'package:estore_marketing/main_classes/fruitandveg.dart';
 import 'package:estore_marketing/main_classes/groceries.dart';
 import 'package:estore_marketing/main_classes/maincategory.dart';
 import 'package:estore_marketing/main_classes/medicines.dart';
@@ -12,6 +12,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'categorymain.dart';
 import 'login.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,7 +35,10 @@ class _HomePageState extends State<HomePage> {
 
   final screen = [
       SubHome(),
-      Container(color: Colors.greenAccent)
+      MyCategory(),
+      Container(child: Center(child: Image.asset("assets/images/petsfood/comingsoon1.jpg"),),),
+      Container(child: Center(child: Image.asset("assets/images/petsfood/comingsoon1.jpg"),),),
+
   ];
   @override
   Widget build(BuildContext context) {
@@ -45,14 +49,19 @@ class _HomePageState extends State<HomePage> {
         flexibleSpace: MyAppBar(),
       ),
       bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.apps_rounded),label: "Categories"),
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "HOME"),
+        BottomNavigationBarItem(icon: Icon(Icons.apps_rounded),label: "CATEGORIES"),
+        BottomNavigationBarItem(icon: Icon(Icons.store),label: "STORES"),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_bag),label: "ORDERS"),
+
 
       ],
+
         backgroundColor: Colors.green[800],
+        type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.white,
-        currentIndex: 0,
+        currentIndex: _selectedIndex,
         onTap: callData,
 
       ),

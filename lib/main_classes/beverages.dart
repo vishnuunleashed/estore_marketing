@@ -27,15 +27,15 @@ class _BeveragesState extends State<Beverages> {
               crossAxisSpacing: 50,
               mainAxisSpacing: 10,
               crossAxisCount: 3),
-          itemCount: value.bakery.length,
+          itemCount: value.beverages.length,
           itemBuilder: (context, index) => Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(value.bakery[index].pic!),
-              Text(value.bakery[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Image.asset(value.beverages[index].pic!),
+              Text(value.beverages[index].name.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
 
-              Text("₹"+value.bakery[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+              Text("₹"+value.beverages[index].price.toString(),textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ),
